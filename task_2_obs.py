@@ -1,7 +1,8 @@
 import os
 
 def qx99(alpha):
-    with open('data.tmp', 'w') as zz:
+    with open('f.tmp', 'w') as log:  
+
         for aa, bb, cc in os.walk(alpha):
             for dd in cc:
                 if dd.endswith((".txt", ".jpg", ".docx")):
