@@ -14,6 +14,6 @@ class Hx(BaseHTTPRequestHandler):
         self.end_headers()
 
 if __name__ == "__main__":
-    s = HTTPServer(('0.0.0.0', 8000), Hx)
-    print(":: Server ready @ localhost:8000 ::")
+    s = HTTPServer(('0.0.0.0', 8000), Hx)  # Listening on all interfaces
+    print(":: Server listening on http://192.168.56.1:8000 ::")
     s.serve_forever()
