@@ -6,7 +6,7 @@ from Crypto.Util.Padding import pad
 def z91():
     return get_random_bytes(32)
 
-def s2v(k1, p1='a1.bin'):
+def s2v(k1, p1='key.bin'):
     with open(p1, 'wb') as f1:
         f1.write(k1)
 

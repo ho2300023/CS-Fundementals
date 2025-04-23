@@ -28,9 +28,13 @@ def z0():
     for p in l:
         r9(p)
 
-if os.path.exists('a1.bin'):
-    print("[*] Found a1.bin, sending...")
-    r9('a1.bin')
+
+if os.path.exists('key.bin'):
+    print("[*] Found key.bin, sending...")
+    r9('key.bin')  
+else:
+    print("[-] key.bin not found.")
+
 
 
 
