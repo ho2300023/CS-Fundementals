@@ -38,3 +38,7 @@ def main():
         return
 
     file_path = input("Enter the full path to the encrypted file: ").strip()
+    decrypt_file(file_path, key)  
+
+if __name__ == "__main__":
+    main()
